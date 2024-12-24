@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: black;
+    position: relative;
+    font-family: roboto, sans-serif;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    padding: 20px 0;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.sliders {
+    flex: 0 0 100%; /* Each slide takes up full width */
+    margin-right: 30px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5); /* Corrected rgba */
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0; /* Prevent shrinking */
+    transition: margin-left 1s ease-in-out; /* Smooth transition for sliding */
+    overflow: hidden;
+}
+
+.sliders img {
+    width: 100%; /* Fill the container */
+    height: 100%; /* Ensure image takes the full height */
+    object-fit: cover; /* Cover the container */
+    display: block;
+    margin-left: auto;
+}
+
+.slide-content {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, black 80%, transparent 100%);
+    color: white;
+    padding: 20px;
+}
+
+.movie-title {
+    padding-left: 50px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.movie-des {
+    width: 80%;
+    line-height: 1.5;
+    padding-left: 50px;
+    margin-top: 20px;
+    opacity: 0.8;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .slide-content {
+        width: 60%; /* Adjust content width on smaller screens */
+    }
+
+    .movie-title {
+        font-size: 1.5rem;
+    }
+
+    .movie-des {
+        font-size: 1rem;
+    }
+
+    .sliders img {
+        width: 100%; /* Adjust image width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-content {
+        width: 70%; /* Further adjust content width on mobile */
+    }
+
+    .movie-title {
+        font-size: 1.2rem;
+    }
+
+    .movie-des {
+        font-size: 0.9rem;
+    }
+}

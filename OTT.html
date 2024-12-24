@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Document</title>
+    <style type="text/css">
+      #slider{
+          overflow: hidden;
+      }
+      #slider figure{
+          position:relative;
+          width: 500%;
+          margin:0;
+          left:0;
+           
+          animation: 20s slider infinite; 
+
+      }
+      #slider figure img{
+          float:left;
+          width: 20%;
+           
+           
+           
+      }
+       
+      @keyframes slider {
+          0%{
+              left:0;
+           }  
+           20%{
+              left:0;
+           }  
+           25%{
+              left: -100%;
+           }  
+           45%{
+              left: -100%;
+           }  
+           50%{
+              left:-200%;
+           }     
+           70%{
+              left:-200%;
+           }     
+           75%{
+              left:-300%;
+           }  
+           95%{
+              left:-300%;
+           } 
+           100%{
+              left:-400%;
+           }   
+           0%{
+              left:0;
+           }  
+           20%{
+              left:0;
+           }          
+          }    
+  </style>
+</head>
+<body>
+     <div class="navbar">
+          <div class="navbar-container">
+               <div class="logo-container"><h1 class="logo">CARTOONZ</h1></div>
+          <div class="menu-container">
+            
+            <div class="profile-container">
+             <img  class="profile-picture" src="img\d1.jpg" alt="">
+             <div class="profile-text-container">
+               <span class="profile-text">Profile</span>
+               <i class="fa-solid fa-caret-down"></i>
+             </div>
+             <div class="toggle">
+               <i class="fa-solid fa-moon toggle-icon"></i>
+               <i class="fa-solid fa-sun toggle-icon"></i>
+               <div class="toggle-ball"></div>
+             </div>
+            </div>
+         </div>
+     </div>
+       
+        <div class="container">
+         <div class="content-container">
+            <div id="slider">
+               <figure>
+                   <img src="img/sr1.png" >
+                   <img src="img/sr8.png" >
+                   <img src="img/sr3.png" >
+                   <img src="img/sr4.png" >
+                   <img src="img/sr5.png" >
+               </figure>
+               
+            </div>
+             <div class="movie-list-container">
+               <h1 class="movie-list-title">NEW RELEASES</h1>
+               <div class="movie-list-wrapper">
+                  <div class="movie-list">
+                     <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/d7.jpg" alt="">
+                        <span class="movie-list-itmen-title"></span>
+                        <p class="movie-list-item-desc">Doreamon Episode</p>
+                        <button  class="movie-list-item-button">Watch</button>
+                       
+                     </div>
+                     <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/d8.jpg" alt="">
+                        <span class="movie-list-itmen-title"></span>
+                        <p class="movie-list-item-desc">Disney:Tangled</p>
+                        <button  class="movie-list-item-button">Watch</button>
+                     </div>
+                     <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/d9.jpg" alt="">
+                        <span class="movie-list-itmen-title"></span>
+                        <p class="movie-list-item-desc">Sinchan Movie</p>
+                        <button  class="movie-list-item-button">Watch</button>
+                     </div>
+                     
+                     <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="img/tom1.jpg" alt="">
+                        <span class="movie-list-itmen-title"></span>
+                        <p class="movie-list-item-desc">Tom and Jerry </p>
+                        <button  class="movie-list-item-button">Watch</button>
+                     </div>
+                     
+                  </div>
+                  <div class="movie-list-container">
+                     <h1 class="movie-list-title"> Recomended For You</h1>
+                     <div class="movie-list-wrapper">
+                        <div class="movie-list">
+                           <div class="movie-list-item">
+                              <a href="mickey.html"><img class="movie-list-item-img1" src="img/d20.jpg" alt=""></a>
+                              <span class="movie-list-itmen-title"></span>
+                              <p class="movie-list-item-desc">The mickey mouse Episodes </p>
+                              
+                           </div>
+                           <div class="movie-list-item">
+                              <a href="Sponge.html"><img class="movie-list-item-img1" src="img/d22.jpg" alt=""></a>
+                              <span class="movie-list-itmen-title"></span>
+                              <p class="movie-list-item-desc">Spongebob square pants</p>
+                               
+                           
+                           </div>
+                           <div class="movie-list-item">
+                              <a href="doremon.html"><img class="movie-list-item-img1" src="img/d31.jpg" alt=""></a>
+                              <span class="movie-list-itmen-title"></span>
+                              <p class="movie-list-item-desc">Doremon<br>episodes</p>
+                               
+                           </div>
+                           <div class="movie-list-item">
+                              <a href="tom.html"><img class="movie-list-item-img1" src="img/tom.jpg" alt=""></a>
+                              <span class="movie-list-itmen-title"></span>
+                              <p class="movie-list-item-desc">TOM and JERRY<br>Episodes</p>
+                               
+                           </div>
+                           <div class="movie-list-item1">
+                              <a href="oggy.html"><img class="movie-list-item-img1" src="img/oggy.jpg" alt=""></a>
+                              <span class="movie-list-itmen-title"></span>
+                              <p class="movie-list-item-desc">Oggy and the Cockroaches </p>
+                              
+                           </div> 
+                           <div class="movie-list-item1">
+                              <a href="ninja.html"><img class="movie-list-item-img1" src="img/ninja.jpg" alt=""></a>
+                              <span class="movie-list-itmen-title"></span>
+                              <p class="movie-list-item-desc">NINJA HATTORI<br>Episodes </p>
+                               
+                           </div>
+                        </div>
+                   
+               </div>
+             </div>
+         </div>
+          
+        <div class="sidebar">
+         <i class="left-menu-icon fa-solid fa-solid fa-bars" onclick="openMenu()"></i>
+            <div id="container1">
+               <div id="close" onclick="closeMenu()">&#10133;</div>
+               <ul id="menu">
+                  <li> <a href="Disney.html">Disney</a></li>
+                  <li><a href="Nicklodian.html">Nickelodeon</a></li>
+                  <li><a href="t.html">Pogo</a></li>
+                  <li> <a href="hungama.html">Hungama</a></li>
+
+               </ul>
+            </div>
+            <script>
+               function openMenu(){
+                  document.getElementById('container1').style.left='0%';
+                  document.getElementById('menu').style.opacity='1';
+
+               }
+               function closeMenu(){
+                  document.getElementById('container1').style.left='-100%';
+                  document.getElementById('menu').style.opacity='0';
+               }
+            </script>
+         <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+         <i class="left-menu-icon fa-solid fa-house-chimney"></i>
+         <a href="login.html" ><i class="left-menu-icon fa-solid fa-user"></i></a>
+         <i class="left-menu-icon fa-solid fa-bookmark"></i>
+         <i class="left-menu-icon fa-solid fa-tv"></i>
+         <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+         <i class="left-menu-icon fa-solid fa-cart-plus"></i>
+     </div>
+         
+        
+
+</body>
+</html>
